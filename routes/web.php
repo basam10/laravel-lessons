@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/users/{username}/{age}/{address}', function($a, $b, $c){
+    // return "Hello world";
+    return json_encode([
+        "username" => $a,
+        "age" => $b,
+        "address" => $c
+    ]);
 });
