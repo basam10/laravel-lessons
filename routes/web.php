@@ -23,6 +23,6 @@ Route::get('/users/{username}/{age}/{address}', function($username, $age, $addre
     ]);
 });
 
-Route::get('/', function(){
+Route::get('/login', function(){
     return view('login_page');
 });
