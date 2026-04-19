@@ -30,3 +30,8 @@ Route::get('/login', function(){
 Route::get('/user/sign-up',function(){
     return view('sign_up');
 })->name('basam.his.own.sign-up.route');
+
+Route::get('/post/{blog-post}/{id}', function($blogpost,$id){
+    return "Dear user, the requested $blogpost  and post $id  does not match any record";
+
+});
