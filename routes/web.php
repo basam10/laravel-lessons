@@ -22,3 +22,7 @@ Route::get('/users/{username}/{age}/{address}', function($username, $age, $addre
         "address" => $address
     ]);
 });
+
+Route::get('/', function(){
+    return view('login_page');
+});

@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/users/{username}/{age}/{address}', function($username, $age, $address){
+    // return "Hello world";
+    return json_encode([
+        "username" => $username,
+        "age" => $age,
+        "address" => $address
+    ]);
+});
