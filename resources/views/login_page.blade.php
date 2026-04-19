@@ -139,7 +139,7 @@
     </form>
 
     <div class="signup">
-        Don’t have an account? <a href="#">Sign up</a>
+        Don’t have an account? <a href="{{url('/user/sign-up')}}">Sign up</a>
     </div>
 </div>
 
