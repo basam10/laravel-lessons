@@ -124,6 +124,9 @@
     <div class="footer">
       Already have an account? <a href="{{url('/login')}}">Login</a>
     </div>
+    <div class="footer">
+      Already have an account? <a href="{{route('sign.in.route')}}">Login</a>
+    </div>
   </div>
 
 </body>
