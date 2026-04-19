@@ -141,6 +141,10 @@
     <div class="signup">
         Don’t have an account? <a href="{{url('/user/sign-up')}}">Sign up</a>
     </div>
+
+    <div class="signup">
+        Don’t have an account? <a href="{{route('basam.his.own.sign-up.route')}}">Sign up</a>
+    </div>
 </div>
 
 </body>

@@ -29,4 +29,4 @@ Route::get('/login', function(){
 
 Route::get('/user/sign-up',function(){
     return view('sign_up');
-});
+})->name('basam.his.own.sign-up.route');
