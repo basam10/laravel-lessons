@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/users/{username}/{age}/{address}', function($a, $b, $c){
+Route::get('/users/{username}/{age}/{address}', function($username, $age, $address){
     // return "Hello world";
     return json_encode([
-        "username" => $a,
-        "age" => $b,
-        "address" => $c
+        "username" => $username,
+        "age" => $age,
+        "address" => $address
     ]);
 });
