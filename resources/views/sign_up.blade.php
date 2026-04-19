@@ -122,7 +122,7 @@
     </form>
 
     <div class="footer">
-      Already have an account? <a href="#">Login</a>
+      Already have an account? <a href="{{url('/login')}}">Login</a>
     </div>
   </div>
 
